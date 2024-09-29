@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+#Header{
+    display: flex;
+    /* background-color: red; */
+    /* justify-content: space-evenly; */
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#Logo{
+    /* background-color: blue; */
+    
+}
+#Menubar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#Menubar li {
+    padding: 5px;
+}
+#Menubar #CurrentPage{
+    background-color: yellow;
+}
+
+
+#SocialMedia {
+    list-style-type: none;
+    /* background-color: green; */
+ 
+}
