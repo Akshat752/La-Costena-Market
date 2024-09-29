@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&display=swap');
+
 body {
     margin: 0;
+    font-family: "Cabin";
 }
 a {
     text-decoration: none;
+}
+h1 {
+    text-align: center;
+    font: 700 40px "Dancing Script";
 }
 #Header{
     display: flex;
@@ -10,11 +17,36 @@ a {
     /* justify-content: space-evenly; */
     align-items: center;
     justify-content: space-between;
-    
+    /* border-left: 5px solid #ffa64d; 
+    border-right: 5px solid #ffa64d; */
+    border-bottom: 5px solid #ffa64d;
+    padding: 3px 12px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: white;
 }
-#Logo{
-    /* background-color: blue; */
-    
+
+/* Menubar */
+@keyframes menubar-link-hover { /* Color change animation for links */
+    from {color: black;}
+    to {color: #00cccc;}
+}
+#Menubar li {
+    border-right: 3px solid #ffa64d;
+}
+#Menubar li a {
+    font: 30px "Cabin";
+    padding: 0px 10px;
+    color: black;
+}
+#Menubar li a:hover {
+    animation-name: menubar-link-hover;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+#Menubar li:last-child {
+    border-right: none;
 }
 #Menubar {
     display: flex;
@@ -26,12 +58,70 @@ a {
     padding: 5px;
 }
 #Menubar #CurrentPage{
-    background-color: yellow;
+    text-decoration: underline;
+}
+#Logo{
+    /* background-color: blue; */
+    
 }
 
-
+/* Social Media */
 #SocialMedia {
-    list-style-type: none;
-    /* background-color: green; */
- 
+    display: flex;
+    padding: 0px;
+    list-style: none;
+}
+#SocialMedia li {
+    padding: 0px 10px 0px 0px;
+}
+#SocialMedia li:last-child {
+    padding: none;
+}
+#SocialMedia a {
+    color: black;
+}
+
+/* Body Text */
+h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 0px 0px 0px;
+}
+.body-text-section-left {
+    color: white;
+    background-color: #0039e6;
+    width: 90%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+}
+.body-text-flex-container {
+    display: flex;
+    padding: 0 0.5em 0.5em 1.5em;
+    padding-top: 0px;
+    margin: 0px;
+}
+.body-text-flex-container * {
+    padding-right: 0.5em;
+    margin-top: 0;
+}
+.body-text-flex-container:last-child {
+    padding-right: 0;
+}
+.body-text-section-right {
+    background-color: white;
+    position: absolute;
+    color: black;
+    width: 90%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    right: 0;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
 }
