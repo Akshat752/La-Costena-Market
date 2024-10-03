@@ -7,10 +7,6 @@ body {
 a {
     text-decoration: none;
 }
-h1 {
-    text-align: center;
-    font: 700 40px "Dancing Script";
-}
 #Header{
     display: flex;
     /* background-color: red; */
@@ -44,6 +40,7 @@ h1 {
     animation-name: menubar-link-hover;
     animation-duration: 300ms;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 #Menubar li:last-child {
     border-right: none;
@@ -93,7 +90,7 @@ h2 {
 }
 .body-text-section-left {
     color: white;
-    background-color: #0039e6;
+    background-color: #002db3;
     width: 90%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -128,4 +125,50 @@ h2 {
     padding: 0px;
     margin: 0px;
     font-size: 30px;
+}
+
+/* Pickup / Catering Banner */
+@keyframes pickup-cater-button-hover {
+    from { background-color: #ff8c1a;}
+    to { background-color: #ffa64d; }
+}
+h1 {
+    text-align: center;
+    font: 700 75px "Dancing Script";
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+}
+#pickup-catering-banner {
+    background-image: url('InsideImage4.png');
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#pickup-catering-flex {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#pickup-catering-flex p {
+    font-size: 50px;
+    text-shadow: 0.5px 0.5px 0 #000;
+    text-align: center;
+    margin: 0 50px;
+}
+#pickup-catering-flex a {
+    font-size: 45px;
+    background-color: #ff8c1a;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    padding: 0 1em;
+    border-radius: 30px;
+    height: 2em;
+    margin-top: 200px;
+}
+#pickup-catering-flex a:hover {
+    animation-name: pickup-cater-button-hover;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
