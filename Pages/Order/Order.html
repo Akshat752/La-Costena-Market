@@ -2,20 +2,20 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <title>Order</title>
+        <title>Menu</title>
         <link rel="icon" type="image/x-icon" href="../../SharedResources/logo.png">
         <link rel="stylesheet" href="../../SharedResources/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     </head>
-    <body>
+    <body style="background-color: #ccd9ff;">
         <div id="Header">
             <a href="/">
                 <img id = "Logo" src="../../SharedResources/logo.png" >
             </a>
             <ul id ="Menubar">
                 <li><a href="../../index.html">Home</a></li>
-                <li id = "CurrentPage"><a href="#">Order</a></li>
+                <li id="CurrentPage"><a href="#">Order</a></li>
                 <li><a href="../Faq/Faq.html">FAQ</a></li>
                 <li><a href="../Menu/Menu.html">Menu</a></li>
                 <li><a href="../Contact/Contact.html">Contact</a></li>
@@ -23,12 +23,144 @@
             <ul id ="SocialMedia">
                 <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/lacoste_a_caribbean/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
-            
         </div>
-        
-        <p>Order Page</p>
+        <div id="menu-body-flex">
+            <ul id="menu-categories-list">
+                <li><a href="#popular-items"><img src="../../SharedResources/InsideImage3.png" class="category-icon"/> Popular Items</a></li>
+                <li><a href="#empanadas"><img src="../../SharedResources/InsideImage3.png" class="category-icon"/> Empanadas</a></li>
+                <li><a href="#soups"><img src="../../SharedResources/InsideImage3.png" class="category-icon"/> Soups</a></li>
+                <li><a href="#baked-goods"><img src="../../SharedResources/InsideImage3.png" class="category-icon"/> Baked Goods</a></li>
+                <li><a href="#platters"><img src="../../SharedResources/InsideImage3.png" class="category-icon"/> Platters</a></li>
+                <li><a href="#fried-food"><img src="../../SharedResources/InsideImage3.png" class="category-icon"/> Fried Food</a></li>
+            </ul>
+            <div id="menu-container">
+                <h1>La Costeña Market</h1>
+                <h2 id="popular-items">Popular Items</h2>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item A ($10.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item B ($15.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <h2 id="empanadas">Empanadas</h2>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item C ($4.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item D ($23.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <h2 id="soups">Soups</h2>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item E ($12.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item F ($9.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <h2 id="baked-goods">Baked Goods</h2>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item G ($10.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item H ($15.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <h2 id="platters">Platters</h2>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item I ($2.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item J ($17.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <h2 id="fried-food">Fried Food</h2>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item K ($14.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+                <div class="menu-category-container">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Food Item L ($10.99)</h3>
+                            <button>Add To Cart</button>
+                        </div>
+                        <p>A description of the item would go here. Scale font size according to length.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="user-order-container">
+                <h3>Your Order</h3>
+                <div id="user-order-cart">
+                    <ul id="user-cart-items">
+                        <li>Cart is empty.</li>
+                    </ul>
+                    <p id="payment-total">Total: $0.00</p>
+                </div>
+                <a id="checkout-button">Pay Now</a>
+            </div>
+        </div>
     </body>
 </html>
