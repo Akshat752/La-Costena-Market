@@ -180,7 +180,7 @@ h1 {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     color: white;
-    width: 20%;
+    position: fixed;
 }
 #menu-categories-list li {
     display: flex;
@@ -203,6 +203,8 @@ h1 {
 #menu-body-flex {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    justify-items: center;
 }
 .category-icon {
     height: 2em;
@@ -211,9 +213,9 @@ h1 {
     border: 2px solid white;
 }
 #menu-container {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    width: 55%;
+    margin-left: 20%;
+    /* margin-right: 2.5%; */
+    width: 55%; 
     height: 50vh;
 }
 #menu-container h2 {
@@ -225,13 +227,13 @@ h1 {
     color: #000;
 }
 #user-order-container {
-    width: 20%;
     background-color: #ff8c1a;
     padding: 10px 20px;
-    margin: 45px 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     color: white;
+    position: fixed;
+    width: 18%
 }
 #user-order-container h3 {
     font-size: 45px;
